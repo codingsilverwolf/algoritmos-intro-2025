@@ -1,0 +1,126 @@
+
+// PROGRAMAR ES COMUNICAR
+
+// Estrategia Top-Down
+// CONTRATOS de procedimientos
+// Reutilización de código
+// Pascal Case para procedimientos, camelCase para parámetros
+
+
+program{
+    //Poner(Negro); Mover(Este); Poner(Negro); Mover(Este);Poner(Negro)
+    DibujarCuadradoDeLado3Color_(Negro)
+    PosicionarElSegundoCuadrado() // Mejorar ---- tarea PosiconarCuadradoAlSurEste()
+    DibujarCuadradoDeLado3Color_(Rojo)
+}
+
+
+
+procedure DibujarCuadradoNegroDeLado3() {
+    
+    /*
+    PROPÓSITO: Dibuja un cuadrado Negro de lado 3 comenzando en la esquina inferior izquierda, 
+    dejando el cabezal en la celda inicial.
+    PRECONDICIONES: debe haber AL MENOS 2 celdas al este de la celda actual y 2 al norte.
+    */
+    
+     DibujarLineaNegra3()
+     Mover(Norte)
+     DibujarLineaNegra3()
+     Mover(Norte)
+     DibujarLineaNegra3()
+     Mover(Sur)
+     Mover(Sur)
+     
+ }
+
+
+procedure DibujarLineaNegra3() {
+    Poner(Negro); Mover(Este); Poner(Negro); Mover(Este);Poner(Negro)
+    Mover(Oeste); Mover(Oeste)
+}
+
+procedure PosicionarElSegundoCuadrado(){
+    IrAlBorde(Este)
+    Mover(Oeste)
+    Mover(Oeste)
+}
+
+
+
+
+// colorDeCuadrado está en Camel Case y es un parámetro
+procedure DibujarCuadradoDeLado3DeColor_(colorDeCuadrado) {
+    
+    /*
+    PROPÓSITO: Dibuja un cuadrado de color *colorDeCuadrado*  de lado 3 comenzando en la esquina inferior izquierda, 
+    dejando el cabezal en la celda inicial.
+    PRECONDICIONES: debe haber AL MENOS 2 celdas al este de la celda actual y 2 al norte.
+    PARÁMETROS: colorDeCuadrado - Color.
+    */
+    
+     DibujarLinea3DeColor_(colorDeCuadrado)
+     Mover(Norte)
+     DibujarLinea3DeColor_(colorDeCuadrado)
+     Mover(Norte)
+     DibujarLinea3DeColor_(colorDeCuadrado)
+     Mover(Sur)
+     Mover(Sur)
+     
+}
+    
+    
+procedure DibujarLinea3DeColor_(colorAPintar) {
+    Poner(colorAPintar); Mover(Este); Poner(colorAPintar); Mover(Este);Poner(colorAPintar)
+    Mover(Oeste); Mover(Oeste)
+}
+
+
+procedure DibujarCuadradoDeLado_DeColor_(longitudDeLado, colorDeCuadrado) {
+    //hacer
+}
+
+
+
+
+procedure DibujarMalCuadradoDeLado_DeColor_(longitudDeLado, colorDeCuadrado) {
+    /*
+    PROPÓSITO: Dibuja un cuadrado de color *colorDeCuadrado*  de lado *longitudDeLado* comenzando en la esquina inferior izquierda, 
+    dejando el cabezal en la celda inicial.
+    PRECONDICIONES: debe haber AL MENOS (*longitudDeLado* - 1) celdas al este de la celda actual y (*longitudDeLado* - 1) al norte.
+    PARÁMETROS: 
+        - longitudDeLado - Número. Debe ser un entero positivo. La longitud del lado del cuadrado.
+        - colorDeCuadrado - Color. El color del cual se va a pintar el cuadrado. 
+    */
+    
+    repeat(longitudDeLado) {
+        DibujarLineaDeLongitud_DeColor_(longitudDeLado, colorDeCuadrado)
+        Mover(Norte)
+    }
+}    
+
+procedure DibujarLineaDeLongitud_DeColor_(cantidadDeBolitas, colorAPintar) {
+    /*
+    PROPÓSITO: Dibuja un línea de Oeste a Este de *cantidadDeBolitas* bolitas de color *colorAPintar*.
+    PRECONDICIONES: 
+    PARÁMETROS:
+        - cantidadDeBolitas. Número. Entero positivo. La cantidad de bolitas que conforman la línea.
+        - colorAPintar. Color. El color de las bolitas que conforman la línea.
+    */
+    repeat(cantidadDeBolitas-1){
+        Poner(colorAPintar); Mover(Este);
+    
+    }
+    Poner(colorAPintar) // caso borde
+    repeat(cantidadDeBolitas-1) {
+        Mover(Oeste)
+    }
+    
+}
+    
+    
+
+
+
+
+
