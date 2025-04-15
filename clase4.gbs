@@ -1,0 +1,83 @@
+program{
+    //Sacar_DeColor_(4, Rojo)
+}
+
+procedure Poner_DeColor_(cantidadAPoner, colorAPoner){
+    /*
+    PROPÓSITO: Pone *cantidadAPoner*  de bolitas de color *colorAPoner* en la celda actual.
+    PRECONDICIONES:  Ninguna (Poner es un comando absoluto).                                    
+    PARÁMETROS: 
+        - cantidadAPoner. Número. La cantidad de bolitas a poner.
+        - colorAPoner. Color. El color de las bolitas a poner.
+    
+    */
+    repeat(cantidadAPoner){
+        Poner(colorAPoner)    
+    }
+    
+
+}
+
+
+procedure Mover_VecesAl_(cantidadAMover, direcciónAMover){
+    /*
+    PROPÓSITO: Mueve el cabezal *cantidadAMover* celdas hacia *direcciónAMover*.
+    PRECONDICIONES: Deben existir al menos *cantidadAMover* celdas en las 4 direcciones desde la celda actual.
+    PARÁMETROS:
+        cantidadAMover. Número. La cantidad de celdas a desplazar el cabezal.
+        direcciónAMover. Dirección. La dirección hacia donde se moverá el cabezal.
+    */
+    repeat(cantidadAMover){
+        Mover(direcciónAMover)
+    }
+
+}
+
+
+procedure Sacar_DeColor_(cantidadASacar, colorASacar){
+    /*
+    PROPÓSITO: Saca *cantidadASacar* de color *colorASacar* de la celda actual.
+    PRECONDICIONES: Deben existir al menos *cantidadASacar* bolitas *colorASacar* en la celda actual. 
+    PARÁMETROS
+        - cantidadASacar. Número. La cantidad de bolitas a sacar. 
+        - colorASacar. Color. El color de las bolitas a sacar.
+    
+    */
+    
+    repeat(cantidadASacar){
+        Sacar(colorASacar)
+    }
+    
+
+}
+
+procedure PonerUnaSemilla(){
+    /*
+    PROPÓSITO: Pone una semilla en la parcela actual. La misma se representa con una bolita roja.
+    PRECONDICIONES: Ninguna.
+    */
+    Poner(Rojo)
+}
+
+
+procedure Poner_Semillas(cantidadDeSemillasAPoner){
+    /*
+    PROPÓSITO: Pone *cantidadDeSemillasAPoner*0 semillas en la parcela actual. 
+    PRECONDICIONES: Ninguna.
+    PARÁMETROS: cantidadDeSemillasAPoner. Número. La cantidad de semillas a poner.
+    */
+    repeat(cantidadDeSemillasAPoner){
+        PonerUnaSemilla()
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
