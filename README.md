@@ -6,9 +6,9 @@
 - Bitácora
 - Archivos .gbs
 
-### Consultar bitácora por asignaciones sobre trabajo autónomo para clase siguiente. 
+### Ya disponible v. 1.2 de la P1 
 
 ### Este repositorio se actualiza constantemente
 
 
-Última actualización pública: 29-04-2025 10:34:02 zona horaria UTC-03:00
+Última actualización pública: 29-04-2025 10:36:20 zona horaria UTC-03:00
