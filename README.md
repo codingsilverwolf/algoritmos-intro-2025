@@ -6,9 +6,9 @@
 - Bitácora
 - Archivos .gbs
 
-### Leer bitácora
+### Disponible v. 2 de la práctica de Gobstones.
 
 ### Este repositorio se actualiza constantemente
 
 
-Última actualización pública: 30-04-2025 16:58:58 zona horaria UTC-03:00
+Última actualización pública: 05-05-2025 13:43:38 zona horaria UTC-03:00
