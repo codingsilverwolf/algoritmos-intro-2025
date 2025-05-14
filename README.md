@@ -7,9 +7,9 @@
 - Archivos .gbs
 
 ## Update
-*Actualización de bitácora*
+### *Ejercicios de Práctica 2 en formato .ipynb disponibles"
 
 ### Este repositorio se actualiza constantemente
 
 
-Última actualización pública: 07-05-2025 09:14:34 zona horaria UTC-03:00
+Última actualización pública: 14-05-2025 20:01:38 zona horaria UTC-03:00
