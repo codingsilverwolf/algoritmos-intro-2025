@@ -6,10 +6,13 @@
 - Bitácora
 - Archivos .gbs
 
-## Update
-### *Ejercicios de Práctica 2 en formato .ipynb disponibles"
+## Update:
+
+#### *Full actualización bitácora: corrección de fecha de 22 de mayo. Correcciones menores de redacción. Íconos más representativos.*
+
+#### *P2 listas v2: ampliación con nuevos ejercicios.*
 
 ### Este repositorio se actualiza constantemente
 
 
-Última actualización pública: 14-05-2025 20:14:30 zona horaria UTC-03:00
+Última actualización pública: 19-05-2025 10:53:59 zona horaria UTC-03:00
